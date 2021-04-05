@@ -1,8 +1,24 @@
 {
   "name": "js.tau",
   "version": "0.1.0",
+  "license": "ISC",
   "private": true,
-  "dependencies": {
+  "author": "Kevin Herrera <kevin@herrera.io>",
+  "description": "A template for creating Electron apps using React with TypeScript.",
+  "keywords": [
+    "electron",
+    "react",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/kherge/js.tau/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kherge/js.tau.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -17,27 +33,17 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
+  "browserslist": [
+    "last 1 electron version"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   }
 }
