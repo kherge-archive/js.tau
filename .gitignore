@@ -1,6 +1,10 @@
 # Become an allow list.
 *
 
+# Allow the GitHub specific files.
+!/.github/
+!/.github/**
+
 # Allow the ignore list.
 !/.gitignore
 
