@@ -2,6 +2,10 @@ import is from "electron-is";
 import path from "path";
 import { BrowserWindow, app } from "electron";
 
+// Intercept Squirrel setup on Windows.
+// https://www.electronforge.io/config/makers/squirrel.windows
+if (require("electron-squirrel-startup")) app.quit();
+
 // NOTE: Assume that `__dirname` is the root of the `build/` folder.
 
 /**
