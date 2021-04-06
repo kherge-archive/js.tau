@@ -12,6 +12,9 @@
 !/src/
 !/src/**
 
+# Allow the Electron Forge configuration.
+!/forge.js
+
 # Allow the package manifest.
 !/package.json
 !/yarn.lock
