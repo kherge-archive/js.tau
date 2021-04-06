@@ -1,3 +1,5 @@
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=kherge_js.tau)](https://sonarcloud.io/dashboard?id=kherge_js.tau)
+
 # Tau
 
 A template for creating Electron apps using React with TypeScript.
