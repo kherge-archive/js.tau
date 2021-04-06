@@ -1,5 +1,6 @@
 module.exports = {
   packagerConfig: {
+    icon: "public/favicon",
     ignore: [
       "electron",
       "node_modules",
@@ -10,6 +11,7 @@ module.exports = {
       "README.md",
       "tsconfig.json",
     ],
+    platform: "all",
   },
   makers: [
     {
