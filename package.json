@@ -50,7 +50,7 @@
     "build:react": "react-scripts build",
     "build:setup": "webpack --config electron/webpack.config.js --stats errors-warnings",
     "release": "npm run build:react && electron-forge make",
-    "start": "node scripts/start.js",
+    "start": "npm run build:setup && node scripts/start.js",
     "start:electron": "wait-on tcp:3000 && electron-forge start",
     "start:react": "cross-env BROWSER=none react-scripts start",
     "test": "react-scripts test"
