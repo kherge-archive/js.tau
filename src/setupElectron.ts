@@ -8,14 +8,9 @@ if (require("electron-squirrel-startup")) app.quit();
 
 // NOTE: Assume that `__dirname` is the root of the `build/` folder.
 
-/**
- * The application window.
- */
-let window: BrowserWindow;
-
 // Wait until Electron is ready.
 app.whenReady().then(() => {
-  window = createWindow();
+  createWindow();
 });
 
 /**
