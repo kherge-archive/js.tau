@@ -16,7 +16,7 @@ app.whenReady().then(() => {
 /**
  * Creates and configures a new window containing the React application.
  */
-const createWindow = (): BrowserWindow => {
+const createWindow = () => {
   const window = new BrowserWindow({
     icon: getIconPath(),
   });
@@ -31,8 +31,6 @@ const createWindow = (): BrowserWindow => {
   } else {
     window.loadURL(`file://${path.join(__dirname, "index.html")}`);
   }
-
-  return window;
 };
 
 /**
