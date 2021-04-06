@@ -4,6 +4,10 @@
 # Allow the ignore list.
 !/.gitignore
 
+# Allow the Electron configurations.
+!/electron/
+!/electron/**
+
 # Allow the public assets.
 !/public/
 !/public/**
