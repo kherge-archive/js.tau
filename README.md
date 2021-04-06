@@ -1,4 +1,4 @@
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=kherge_js.tau)](https://sonarcloud.io/dashboard?id=kherge_js.tau)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kherge_js.tau&metric=alert_status)](https://sonarcloud.io/dashboard?id=kherge_js.tau)
 
 # Tau
 
