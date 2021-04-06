@@ -1,5 +1,16 @@
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    ignore: [
+      "electron",
+      "node_modules",
+      "public",
+      "scripts",
+      "src",
+      ".gitignore",
+      "README.md",
+      "tsconfig.json",
+    ],
+  },
   makers: [
     {
       name: "@electron-forge/maker-squirrel",
