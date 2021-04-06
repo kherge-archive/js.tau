@@ -2,15 +2,62 @@
 
 A template for creating Electron apps using React with TypeScript.
 
+## Getting Started
+
+First, you will need to create your project.
+
+    yarn create tau-app my-app
+
+(You can also use `npx`.)
+
+    npx create-tau-app my-app
+
+This command will create a new project using the most recent version of this template. During the creation process, you will be asked for some information about your project. This information will adjust the `package.json` file for your project.
+
+With your new project ready, you can start working as you would with any other project created using [`create-react-app`][]. The same `react-scripts` and dependencies are used. Once you're ready to see your project in action, you can run it in Electron.
+
+    yarn start
+
+This command will perform a series of actions:
+
+1. Compile `src/setupElectron.ts`.
+2. Start React by using `react-scripts start`.
+3. Start Electron by using `electron-forge start`.
+
+And with that, you're all set!
+
+- [Electron Documentation](https://www.electronjs.org/docs)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+
+### Electron Main Script
+
+The compilation of `src/setupElectron.ts` is necessary for a few of reasons.
+
+- [Electron requires a script][] to run in its main process.
+- It is written in TypeScript and Electron requires JavaScript.
+- It bundles the dependencies into the script to avoid module resolution issues.
+
+It is important to remember that by default, unlike your React app, the `src/setupElectron.ts` script does not hot reload. Electron will only load the main script once. If you are working through changes in this script, you may want to do the following:
+
+1. Run `yarn start:react` to start React separately.
+2. Run `yarn start:electron` to start Electron separately.
+
+Using this approach, you can kill the `start:electron` task and re-run it without also restarting the React application.
+
+[`create-react-app`]: https://create-react-app.dev/
+[electron requires a script]: https://www.electronjs.org/docs/tutorial/quick-start#main-and-renderer-processes
+
+## Why
+
+I wanted a quick way to use `electron-forge`, `react-scripts`, and TypeScript together. Not just for the React app, but for the Electron main script as well.
+
 ## Development
 
 ### Setup
 
     yarn install
 
-Installs the dependencies needed to build te project. Yarn has been recommended in multiple
-points of researching Electron apps, so that recommendation is extended to this project. No support
-will be provided for any other package manager.
+Installs the dependencies needed to build te project. Yarn has been recommended in multiple points of researching Electron apps, so that recommendation is extended to this project. No support will be provided for any other package manager.
 
 ### Building
 
