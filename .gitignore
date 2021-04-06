@@ -8,6 +8,10 @@
 !/public/
 !/public/**
 
+# Allow the scripts.
+!/scripts/
+!/scripts/**
+
 # Allow the source code.
 !/src/
 !/src/**
