@@ -8,6 +8,9 @@
 # Allow the ignore list.
 !/.gitignore
 
+# Allow the LICENSE.
+!/LICENSE
+
 # Allow the Electron configurations.
 !/electron/
 !/electron/**
