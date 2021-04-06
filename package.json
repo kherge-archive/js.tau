@@ -65,7 +65,7 @@
     ]
   },
   "config": {
-    "forge": "forge.js"
+    "forge": "electron/forge.config.js"
   },
   "main": "build/setup.js"
 }
