@@ -61,3 +61,11 @@ Runs all of the test files named `*.test.js`.
 > See [react-scripts test][] for details.
 
 [react-scripts test]: https://create-react-app.dev/docs/available-scripts/#npm-test
+
+## License
+
+This application and its source is made available under the ISC license.
+
+### Other
+
+"[proton particle](https://thenounproject.com/eucalyp/collection/nuclear-element-glyph/?i=2256984)" by Eucalyp is licensed under CC BY 3.0.
