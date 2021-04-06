@@ -67,5 +67,6 @@
   "config": {
     "forge": "electron/forge.config.js"
   },
+  "homepage": "./",
   "main": "build/setup.js"
 }

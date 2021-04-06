@@ -7,6 +7,12 @@ if (!process.env.NODE_ENV) {
 // Re-use the react-scripts Webpack configuration.
 const config = require("react-scripts/config/webpack.config.js")();
 
+// ...
+config.node = {
+  __dirname: false,
+  __filename: false,
+};
+
 // Target Node.js.
 config.target = "electron-main";
 
