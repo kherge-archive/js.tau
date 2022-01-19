@@ -1,3 +1,5 @@
+> This project has been archived as it is no longer needed. Please see the official Electron documentation on [how to create a TypeScript + Webpack](https://www.electronforge.io/templates/typescript-+-webpack-template) projects, followed by their documentation on [adding React to the project](https://www.electronforge.io/guides/framework-integration/react-with-typescript).
+---
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kherge_js.tau&metric=alert_status)](https://sonarcloud.io/dashboard?id=kherge_js.tau)
 
 # Tau
